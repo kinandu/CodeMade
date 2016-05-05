@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="menu_select">మెను ఎంపిక</string>
+    <string name="manage_account">ఖాతా సెట్టింగులు</string>
+    <string name="sell">పంట అమ్ము</string>
+    <string name="help">సహాయం</string>
+
+
+</resources>

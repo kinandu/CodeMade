@@ -1,0 +1,149 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.guide.farmer.farmerguide.SellCrop">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:gravity="center_horizontal"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_blank_fragment" />
+<android.support.v7.widget.LinearLayoutCompat
+    android:id="@+id/crop_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_below="@+id/title"
+    android:weightSum="1">
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crop Name"
+        android:id="@+id/crop"
+        android:layout_weight="0.5"
+
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtcrop"
+        android:hint="enter crop name"
+        android:layout_weight="0.5"
+        />
+
+</android.support.v7.widget.LinearLayoutCompat>
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/quan_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/crop_layout"
+        android:weightSum="1">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity"
+            android:id="@+id/quan"
+            android:layout_weight="0.5"
+
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtquan"
+            android:hint="enter quantity"
+            android:layout_weight="0.5"
+            />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/price_layout"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/quan_layout"
+        android:weightSum="1">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:id="@+id/price"
+            android:layout_weight="0.5"
+
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtprice"
+            android:hint="enter price"
+            android:layout_weight="0.5"
+            />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/photo_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/price_layout"
+        android:orientation="vertical"
+        android:weightSum="1"
+     >
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add photo"
+            android:id="@+id/txtadd_photo"
+            android:layout_gravity="center"
+            android:layout_weight="0.2"
+
+            />
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_photo"
+            android:src="@android:drawable/dialog_frame"
+            android:layout_weight="0.8"
+            />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:weightSum="1">
+        <ImageButton
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Price"
+            android:id="@+id/btngallery"
+            android:layout_weight="0.5"
+
+            android:src="@drawable/ic_menu_gallery" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btncamera"
+            android:text="enter crop name"
+            android:layout_weight="0.5"
+            android:src="@drawable/ic_menu_camera" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</RelativeLayout>
