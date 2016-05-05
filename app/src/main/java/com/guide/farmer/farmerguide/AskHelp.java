@@ -17,6 +17,8 @@ import android.view.ViewGroup;
  * Use the {@link AskHelp#newInstance} factory method to
  * create an instance of this fragment.
  */
+
+/*To ask help*/
 public class AskHelp extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -26,6 +28,7 @@ public class AskHelp extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
 
     private OnFragmentInteractionListener mListener;
 
